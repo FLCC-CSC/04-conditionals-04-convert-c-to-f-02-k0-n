@@ -22,7 +22,7 @@ print("\n  1. Convert from Celsius to Fahrenheit \n  2. Convert from Fahrenheit 
 choice = int(input("\nPlease choose from the above menu: "))
 
 if choice == 1:
-  celsius = float(input("Enter a temperature in Celsius: "))
+  celsius = float(input("Enter a temperature to convert: "))
   fahrenheit = celsius * 9/5 + 32
   print(f"\n{celsius} degrees Celsius is {fahrenheit} degrees Fahrenheit.")
 if choice == 2:
