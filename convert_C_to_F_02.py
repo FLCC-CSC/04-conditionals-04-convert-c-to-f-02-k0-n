@@ -15,21 +15,22 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+# title and menu
 print("===== Temperature Converter =====")
+print("\n  1. Convert from Celsius to Fahrenheit \n  2. Convert from Fahrenheit to Celsius")
 
-print("\n 1. Convert from Celsius to Fahrenheit")
-print(" 2. Convert from Fahrenheit to Celsius")
-
+# ask for user input
 choice = int(input("\nPlease choose from the above menu: "))
+temp = float(input("Enter a temperature to convert: "))
 
+# conversion
 if choice == 1:
-  celsius = float(input("Enter a temperature to convert: "))
-  fahrenheit = celsius * 9/5 + 32
-  print(f"\n{celsius} degrees Celsius is {fahrenheit} degrees Fahrenheit.")
+    fahrenheit = (temp * 9/5) + 32
+    print(f"\n{temp} degrees Celsius is {fahrenheit} degrees Fahrenheit.")
 if choice == 2:
-  fahrenheit = float(input("Enter a temperature to convert: "))
-  celsius = (fahrenheit - 32) * 5/9
-  print(f"\n{fahrenheit} degrees Fahrenheit is {celsius} degrees Celsius.")  
+    celsius = (temp - 32) * 5/9
+    print(f"\n{temp} degrees Fahrenheit is {celsius} degrees Celsius.")
+
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -101,7 +102,7 @@ Enter a temperature to convert: -40
 1. What is one lesson you learned in this lab?
 
 I shouldn't second guess myself all the time because I had a feeling it was two 'if' statements, 
-but didn't write it down at first for some reason.
+but didn't write it down at first for some reason. ALSO trial and error.
 
 
 
